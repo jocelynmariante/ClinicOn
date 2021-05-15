@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ClinicOn</string>
+
+    <string-array name="prevision">
+        <item>Fonasa</item>
+        <item>Isapre</item>
+    </string-array>
+
+    <string-array name="genero">
+        <item>Mesculino</item>
+        <item>Femenino</item>
+        <item>Prefiero no responder</item>
+    </string-array>
+</resources>
