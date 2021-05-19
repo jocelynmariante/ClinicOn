@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,12 +22,19 @@ import java.util.Date;
 public class Agendar extends AppCompatActivity {
   private TextView tvDiaDate;
   private EditText txtDiDate;
+  private Button btnAceptarAgendar;
+  private Button btnComprobar;
+  private Button btnVolverAgendar;
+
+
   DatePickerDialog.OnDateSetListener setListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agendar);
-
+        btnAceptarAgendar =(Button) findViewById(R.id.btnAceptarHora);
+        btnComprobar= (Button)findViewById(R.id.btnComprobar);
+        btnVolverAgendar=(Button)findViewById(R.id.btnVolverAgendar);
         tvDiaDate =(TextView) findViewById(R.id.tvDiaDate);
         txtDiDate =(EditText)findViewById(R.id.txtDiaDate);
 

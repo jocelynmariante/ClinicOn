@@ -11,4 +11,30 @@
         <item>Femenino</item>
         <item>Prefiero no responder</item>
     </string-array>
+
+    <string-array name="horas">
+        <item>8:00</item>
+        <item>8:20</item>
+        <item>8:40</item>
+        <item>9:00</item>
+        <item>9:20</item>
+        <item>9:40</item>
+        <item>10:00</item>
+        <item>10:20</item>
+        <item>10:40</item>
+        <item>11:00</item>
+        <item>11:20</item>
+        <item>11:40</item>
+        <item>12:00</item>
+        <item>12:20</item>
+        <item>12:40</item>
+        <item>13:00</item>
+        <item>14:20</item>
+        <item>14:40</item>
+        <item>15:00</item>
+        <item>15:20</item>
+        <item>15:40</item>
+        <item>16:00</item>
+    </string-array>
+
 </resources>
