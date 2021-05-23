@@ -8,7 +8,7 @@
     tools:context=".service.MainActivity">
 
     <EditText
-        android:id="@+id/txtUsuarioLogin"
+        android:id="@+id/user"
         android:layout_width="291dp"
         android:layout_height="58dp"
         android:background="@drawable/elogin"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.321" />
 
     <EditText
-        android:id="@+id/txtpassword"
+        android:id="@+id/pass"
         android:layout_width="293dp"
         android:layout_height="59dp"
         android:background="@drawable/elogin"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.939" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="© Todos los derechos reservados 2021"

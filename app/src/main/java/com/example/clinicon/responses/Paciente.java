@@ -1,17 +1,47 @@
 package com.example.clinicon.responses;
-
+//Importacion de Serializable
+import com.google.gson.annotations.SerializedName; //Sirve para vincular los datos del json a los atributos de la clase
 public class Paciente {
+    @SerializedName("run_usuario")
     private String rut;
+    @SerializedName("u_email")
     private String email;
+    @SerializedName("u_nombre")
     private String nombre;
+    @SerializedName("u_apellido_p")
     private String apellidoPaterno;
+    @SerializedName("u_apellido_m")
     private String apellidoMaterno;
+    @SerializedName("u_edad")
     private int edad;
+    @SerializedName("u_clave")
     private String clave;
-    private String genero;
-    private String prevision;
+    @SerializedName("historialMedico")
+    private HistorialMedico historialMedico;
+    @SerializedName("prevision")
+    private Prevision prevision;
+    @SerializedName("sexo")
+    private Sexo sexo;
+    @SerializedName("doctor")
+    private Doctor doctor;
+    @SerializedName("p_firma")
+    private String firma;
 
-    public Paciente() {
+    public Paciente() {} //Constructor vacío
+
+    public Paciente(String rut, String email, String nombre, String apellidoPaterno, String apellidoMaterno, int edad, String clave, HistorialMedico historialMedico, Prevision prevision, Sexo sexo, Doctor doctor, String firma) {
+        this.rut = rut;
+        this.email = email;
+        this.nombre = nombre;
+        this.apellidoPaterno = apellidoPaterno;
+        this.apellidoMaterno = apellidoMaterno;
+        this.edad = edad;
+        this.clave = clave;
+        this.historialMedico = historialMedico;
+        this.prevision = prevision;
+        this.sexo = sexo;
+        this.doctor = doctor;
+        this.firma = firma;
     }
 
     public String getRut() {
@@ -70,33 +100,43 @@ public class Paciente {
         this.clave = clave;
     }
 
-    public String getGenero() {
-        return genero;
+    public HistorialMedico getHistorialMedico() {
+        return historialMedico;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setHistorialMedico(HistorialMedico historialMedico) {
+        this.historialMedico = historialMedico;
     }
 
-    public String getPrevision() {
+    public Prevision getPrevision() {
         return prevision;
     }
 
-    public void setPrevision(String prevision) {
+    public void setPrevision(Prevision prevision) {
         this.prevision = prevision;
     }
 
-    public Paciente(String rut, String email, String nombre, String apellidoPaterno, String apellidoMaterno, int edad, String clave, String genero, String prevision) {
-        this.rut = rut;
-        this.email = email;
-        this.nombre = nombre;
-        this.apellidoPaterno = apellidoPaterno;
-        this.apellidoMaterno = apellidoMaterno;
-        this.edad = edad;
-        this.clave = clave;
-        this.genero = genero;
-        this.prevision = prevision;
+    public Sexo getSexo() {
+        return sexo;
+    }
 
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
 
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public String getFirma() {
+        return firma;
+    }
+
+    public void setFirma(String firma) {
+        this.firma = firma;
     }
 }

@@ -1,20 +1,29 @@
 package com.example.clinicon.responses;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Area {
-    private int idArea;
+    @SerializedName("id_area")
+    private int id;
+    @SerializedName("a_especializacion")
     private String especializaion;
 
-    public Area(int idArea, String especializaion) {
-        this.idArea = idArea;
+    public Area() {} //Constructor vacío
+
+    public Area(int id, String especializaion) { //Constructor con parametros
+        this.id = id;
         this.especializaion = especializaion;
     }
 
-    public int getIdArea() {
-        return idArea;
+    //Comienzan getter's and setter's
+
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdArea(int idArea) {
-        this.idArea = idArea;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getEspecializaion() {

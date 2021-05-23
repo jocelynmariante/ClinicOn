@@ -39,17 +39,6 @@ public class VerPacientes extends AppCompatActivity {
     }
 
     public void llenar(){
-        paciente.setRut("11.111.111-1");
-        paciente.setEmail("a@gmail.com");
-        paciente.setNombre("carlos");
-        paciente.setApellidoPaterno("aros");
-        paciente.setApellidoMaterno("flores");
-        paciente.setEdad(34);
-        paciente.setClave("1234");
-        paciente.setGenero("masculino");
-        paciente.setPrevision("fonasa");
-
-        pacientes.add(paciente);
 
 
     }

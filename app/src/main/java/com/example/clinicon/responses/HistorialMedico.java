@@ -1,20 +1,26 @@
 package com.example.clinicon.responses;
 
+import com.google.gson.annotations.SerializedName;
+
 public class HistorialMedico {
-    private int idHistorialMedico;
+    @SerializedName("id_historialMedico")
+    private int id;
+    @SerializedName("hm_historial")
     private String HistorialMedico;
 
-    public HistorialMedico(int idHistorialMedico, String historialMedico) {
-        this.idHistorialMedico = idHistorialMedico;
+    public HistorialMedico() {}
+
+    public HistorialMedico(int id, String historialMedico) {
+        this.id = id;
         HistorialMedico = historialMedico;
     }
 
-    public int getIdHistorialMedico() {
-        return idHistorialMedico;
+    public int getId() {
+        return id;
     }
 
-    public void setIdHistorialMedico(int idHistorialMedico) {
-        this.idHistorialMedico = idHistorialMedico;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getHistorialMedico() {
